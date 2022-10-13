@@ -27,12 +27,11 @@ public class ArrayExamples {
   // lowest number when calculating. Returns 0 if there are no elements or just
   // 1 element in the array
   static double averageWithoutLowest(double[] arr) {
-    if(arr == null || arr.length < 2) { 
-      return 0; 
-    }
-    else{
+    if(arr.length < 2) { // set it as an if else statment 
+      return 0.0; 
+    }else{
       double lowest = arr[0];
-      double sum = 0;      
+      double sum = 0.0;      
 
       for(double num: arr) {
         if(num < lowest) { 
